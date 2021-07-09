@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "noImplicitAny": true,
+    "outDir": "dist/cjs",
+    "target": "ES5"
+  },
+  "include": [
+    "src/**/*.ts*",
+    "*.js",
+    "next-env.d.ts",
+  ],
+}
