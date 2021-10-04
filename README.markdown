@@ -9,9 +9,9 @@ See [`docs/next-utils.md`](./docs/next-utils.md) for API documentation.
 ## How to install
 
 ```sh
-yarn add @asl-19/next-utils
+npm install @asl-19/next-utils
 ```
 
 ## Compatibility
 
-This package is developed and used with Node.js 16. The code may be backward/forward-compatible, but use with other Node.js versions is untested and unsupported.
+This package is developed and used with Node.js 16. The code should be forward-compatible, but use with other Node.js versions is untested and unsupported.
