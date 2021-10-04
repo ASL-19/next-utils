@@ -21,6 +21,56 @@ import { LinkProps } from 'next/link';
 export declare const AslLink: FC<LinkProps>;
 
 /**
+ * {@link https://github.com/frux/csp/tree/master/packages/csp-header | csp-headers}
+ * preset.
+ *
+ * @remarks Includes basic rules and Google Analytics/Google Tag Manager exceptions.
+ */
+export declare const cspHeaderPreset: {
+    "base-uri": string[];
+    "connect-src": string[];
+    "default-src": string[];
+    "img-src": string[];
+    "frame-ancestors": string[];
+    "frame-src": string[];
+    "manifest-src": string[];
+    "object-src": string[];
+    "script-src": string[];
+    "style-src": string[];
+};
+
+/**
+ * Default global header values by name.
+ *
+ * @remarks
+ * Should be used with {@link getNextJsHeaders}.
+ */
+export declare const defaultGlobalHeaders: {
+    "Cache-Control": string;
+    "Cross-Origin-Embedder-Policy": string;
+    "Cross-Origin-Opener-Policy": string;
+    "Cross-Origin-Resource-Policy": string;
+    "Feature-Policy": string;
+    "Referrer-Policy": string;
+    "Strict-Transport-Security": string;
+    "X-Content-Type-Options": string;
+    "X-Frame-Options": string;
+    "X-XSS-Protection": string;
+};
+
+/**
+ * Get Next.js headers array from object containing header values by name.
+ */
+export declare const getNextJsHeaders: ({ headers, }: {
+    headers: {
+        [headerName: string]: string;
+    };
+}) => {
+    key: string;
+    value: string;
+}[];
+
+/**
  * Load .env.* into process.env using Next.js’ loadEnvConfig.
  *
  * @remarks
