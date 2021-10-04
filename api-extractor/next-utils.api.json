@@ -206,6 +206,69 @@
         },
         {
           "kind": "Variable",
+          "canonicalReference": "@asl-19/next-utils!cspHeaderPreset:var",
+          "docComment": "/**\n * {@link https://github.com/frux/csp/tree/master/packages/csp-header | csp-headers} preset.\n *\n * @remarks\n *\n * Includes basic rules and Google Analytics/Google Tag Manager exceptions.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "cspHeaderPreset: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    \"base-uri\": string[];\n    \"connect-src\": string[];\n    \"default-src\": string[];\n    \"img-src\": string[];\n    \"frame-ancestors\": string[];\n    \"frame-src\": string[];\n    \"manifest-src\": string[];\n    \"object-src\": string[];\n    \"script-src\": string[];\n    \"style-src\": string[];\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "cspHeaderPreset",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@asl-19/next-utils!defaultGlobalHeaders:var",
+          "docComment": "/**\n * Default global header values by name.\n *\n * @remarks\n *\n * Should be used with {@link getNextJsHeaders}.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "defaultGlobalHeaders: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    \"Cache-Control\": string;\n    \"Cross-Origin-Embedder-Policy\": string;\n    \"Cross-Origin-Opener-Policy\": string;\n    \"Cross-Origin-Resource-Policy\": string;\n    \"Feature-Policy\": string;\n    \"Referrer-Policy\": string;\n    \"Strict-Transport-Security\": string;\n    \"X-Content-Type-Options\": string;\n    \"X-Frame-Options\": string;\n    \"X-XSS-Protection\": string;\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "defaultGlobalHeaders",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@asl-19/next-utils!getNextJsHeaders:var",
+          "docComment": "/**\n * Get Next.js headers array from object containing header values by name.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getNextJsHeaders: "
+            },
+            {
+              "kind": "Content",
+              "text": "({ headers, }: {\n    headers: {\n        [headerName: string]: string;\n    };\n}) => {\n    key: string;\n    value: string;\n}[]"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "getNextJsHeaders",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
           "canonicalReference": "@asl-19/next-utils!loadEnvFileIntoProcessEnv:var",
           "docComment": "/**\n * Load .env.* into process.env using Next.js’ loadEnvConfig.\n *\n * @remarks\n *\n * For dev/build/start loads .env.local; for tests loads .env.test.\n *\n * See https://nextjs.org/docs/basic-features/environment-variables\n */\n",
           "excerptTokens": [

@@ -1,18 +1,18 @@
 {
   "cSpell.words": [
+    "Embedder",
     "heaslip",
+    "maxage",
+    "nosniff",
     "tsdoc",
     "unintuitive",
     "unscoped",
     "yalc"
   ],
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
+    "source.fixAll.eslint": true
   },
-  "eslint.validate": [
-    "javascript",
-    "typescript"
-  ],
+  "eslint.validate": ["javascript", "typescript"],
   "files.associations": {
     "api-extractor.json": "jsonc"
   },
