@@ -14,13 +14,13 @@ jobs:
         node-version: 16.x
 
     - name: Install dependencies
-      run: yarn
+      run: npm install
 
     - name: Build
-      run: yarn build
+      run: npm run build
 
     - name: Run API Extractor check
-      run: yarn api-extractor:check
+      run: npm run api-extractor:check
 
     - name: Run ESLint
-      run: yarn eslint
+      run: npm run eslint
