@@ -11,10 +11,8 @@ import { LinkProps } from 'next/link';
 export const AslLink: FC<LinkProps>;
 
 // @public
-export const getNextJsHeaders: ({ headers, }: {
-    headers: {
-        [headerName: string]: string;
-    };
+export const getNextJsHeaders: (headers: {
+    [headerName: string]: string;
 }) => {
     key: string;
     value: string;

@@ -23,10 +23,8 @@ export declare const AslLink: FC<LinkProps>;
 /**
  * Get Next.js headers array from object containing header values by name.
  */
-export declare const getNextJsHeaders: ({ headers, }: {
-    headers: {
-        [headerName: string]: string;
-    };
+export declare const getNextJsHeaders: (headers: {
+    [headerName: string]: string;
 }) => {
     key: string;
     value: string;
