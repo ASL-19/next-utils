@@ -11,34 +11,6 @@ import { LinkProps } from 'next/link';
 export const AslLink: FC<LinkProps>;
 
 // @public
-export const cspHeaderPreset: {
-    "base-uri": string[];
-    "connect-src": string[];
-    "default-src": string[];
-    "img-src": string[];
-    "frame-ancestors": string[];
-    "frame-src": string[];
-    "manifest-src": string[];
-    "object-src": string[];
-    "script-src": string[];
-    "style-src": string[];
-};
-
-// @public
-export const defaultGlobalHeaders: {
-    "Cache-Control": string;
-    "Cross-Origin-Embedder-Policy": string;
-    "Cross-Origin-Opener-Policy": string;
-    "Cross-Origin-Resource-Policy": string;
-    "Feature-Policy": string;
-    "Referrer-Policy": string;
-    "Strict-Transport-Security": string;
-    "X-Content-Type-Options": string;
-    "X-Frame-Options": string;
-    "X-XSS-Protection": string;
-};
-
-// @public
 export const getNextJsHeaders: ({ headers, }: {
     headers: {
         [headerName: string]: string;
