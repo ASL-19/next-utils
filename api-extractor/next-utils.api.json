@@ -215,7 +215,7 @@
             },
             {
               "kind": "Content",
-              "text": "({ headers, }: {\n    headers: {\n        [headerName: string]: string;\n    };\n}) => {\n    key: string;\n    value: string;\n}[]"
+              "text": "(headers: {\n    [headerName: string]: string;\n}) => {\n    key: string;\n    value: string;\n}[]"
             }
           ],
           "releaseTag": "Public",
