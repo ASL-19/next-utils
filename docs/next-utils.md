@@ -11,8 +11,6 @@ Shared Next.js utility functions for ASL19 projects.
 |  Variable | Description |
 |  --- | --- |
 |  [AslLink](./next-utils.asllink.md) | Same as [next/link](https://nextjs.org/docs/api-reference/next/link)<!-- -->, but with passHref prop pre-set. |
-|  [cspHeaderPreset](./next-utils.cspheaderpreset.md) | [csp-headers](https://github.com/frux/csp/tree/master/packages/csp-header) preset. |
-|  [defaultGlobalHeaders](./next-utils.defaultglobalheaders.md) | Default global header values by name. |
 |  [getNextJsHeaders](./next-utils.getnextjsheaders.md) | Get Next.js headers array from object containing header values by name. |
 |  [loadEnvFileIntoProcessEnv](./next-utils.loadenvfileintoprocessenv.md) | Load .env.\* into process.env using Next.js’ loadEnvConfig. |
 

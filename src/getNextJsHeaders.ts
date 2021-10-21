@@ -5,12 +5,8 @@ type NextJsHeadersArray = Header["headers"];
 /**
  * Get Next.js headers array from object containing header values by name.
  */
-const getNextJsHeaders = ({
-  headers,
-}: {
-  headers: {
-    [headerName: string]: string;
-  };
+const getNextJsHeaders = (headers: {
+  [headerName: string]: string;
 }): NextJsHeadersArray =>
   Object.keys(headers).map((headerName) => ({
     key: headerName,

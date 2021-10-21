@@ -1,5 +1,23 @@
 # @asl-19/next-utils changelog
 
+## [0.3.0](https://github.com/ASL-19/next-utils/pulls?q=is%3Apr+is%3Aclosed+milestone%3A0.3.0) [2021-10-20]
+
+### Removals
+
+* Removed `cspHeaderPreset` and `defaultGlobalHeaders` [**Breaking**] [[#6](https://github.com/ASL-19/next-utils/pull/6)]
+
+    In hindsight these weren’t worth centralizing:
+
+    * `cspHeaderPreset` was problematic because the default `NONE` directives were invalid if the consuming project added other directives.
+
+    * `defaultGlobalHeaders` obfuscated important header information that developers (including on other teams) may need to reference.
+
+### Changes
+
+* Simplified `getNextJsHeaders` arguments [**Breaking**] [[#8](https://github.com/ASL-19/next-utils/pull/8)]
+
+    Replaced object argument with a single headers key with single positional argument.
+
 ## [0.2.0](https://github.com/ASL-19/next-utils/pulls?q=is%3Apr+is%3Aclosed+milestone%3A0.2.0) [2021-10-04]
 
 ### Additions
