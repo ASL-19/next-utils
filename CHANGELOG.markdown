@@ -1,5 +1,11 @@
 # @asl-19/next-utils changelog
 
+## [0.4.0](https://github.com/ASL-19/next-utils/pulls?q=is%3Apr+is%3Aclosed+milestone%3A0.4.0) [2021-12-23]
+
+### Changes
+
+* Added Next.js 12 support [[#10](https://github.com/ASL-19/next-utils/pull/10)]
+
 ## [0.3.0](https://github.com/ASL-19/next-utils/pulls?q=is%3Apr+is%3Aclosed+milestone%3A0.3.0) [2021-10-20]
 
 ### Removals
