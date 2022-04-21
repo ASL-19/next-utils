@@ -1,5 +1,5 @@
 import Link, { LinkProps } from "next/link";
-import React, { FC } from "react";
+import React, { FC, ReactNode } from "react";
 
 /**
  * Same as {@link https://nextjs.org/docs/api-reference/next/link|next/link},
@@ -12,6 +12,8 @@ import React, { FC } from "react";
  * unexpected mistakes/regressions, so it’s safest to always use AslLink over
  * Link.
  */
-const AslLink: FC<LinkProps> = (props) => <Link passHref {...props} />;
+const AslLink: FC<LinkProps & { children: ReactNode }> = (props) => (
+  <Link passHref {...props} />
+);
 
 export default AslLink;
