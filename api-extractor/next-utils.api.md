@@ -6,9 +6,12 @@
 
 import { FC } from 'react';
 import { LinkProps } from 'next/link';
+import { ReactNode } from 'react';
 
 // @public
-export const AslLink: FC<LinkProps>;
+export const AslLink: FC<LinkProps & {
+    children: ReactNode;
+}>;
 
 // @public
 export const getNextJsHeaders: (headers: {

@@ -6,6 +6,7 @@
 
 import { FC } from 'react';
 import { LinkProps } from 'next/link';
+import { ReactNode } from 'react';
 
 /**
  * Same as {@link https://nextjs.org/docs/api-reference/next/link|next/link},
@@ -18,7 +19,9 @@ import { LinkProps } from 'next/link';
  * unexpected mistakes/regressions, so it’s safest to always use AslLink over
  * Link.
  */
-export declare const AslLink: FC<LinkProps>;
+export declare const AslLink: FC<LinkProps & {
+    children: ReactNode;
+}>;
 
 /**
  * Get Next.js headers array from object containing header values by name.

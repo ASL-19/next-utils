@@ -9,7 +9,9 @@ Same as [next/link](https://nextjs.org/docs/api-reference/next/link)<!-- -->, bu
 <b>Signature:</b>
 
 ```typescript
-AslLink: FC<LinkProps>
+AslLink: FC<LinkProps & {
+    children: ReactNode;
+}>
 ```
 
 ## Remarks
