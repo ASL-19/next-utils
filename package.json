@@ -34,7 +34,6 @@
   },
   "devDependencies": {
     "@asl-19/eslint-config": "^0.4.0",
-    "@emotion/react": "^11.4.1",
     "@microsoft/api-documenter": "^7.13.55",
     "@microsoft/api-extractor": "^7.18.12",
     "@testing-library/react": "^12.1.2",
