@@ -1,5 +1,11 @@
 # @asl-19/next-utils changelog
 
+## [0.5.0](https://github.com/ASL-19/next-utils/pulls?q=is%3Apr+is%3Aclosed+milestone%3A0.5.0) [2022-04-21]
+
+### Changes
+
+* Upgraded dependencies, required React 18 [**Breaking**] [[#12](https://github.com/ASL-19/next-utils/pull/12)]
+
 ## [0.4.0](https://github.com/ASL-19/next-utils/pulls?q=is%3Apr+is%3Aclosed+milestone%3A0.4.0) [2021-12-23]
 
 ### Changes
