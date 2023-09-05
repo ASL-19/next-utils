@@ -8,9 +8,8 @@ Shared Next.js utility functions for ASL19 projects.
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [AslLink](./next-utils.asllink.md) | Same as [next/link](https://nextjs.org/docs/api-reference/next/link)<!-- -->, but with passHref prop pre-set. |
-|  [getNextJsHeaders](./next-utils.getnextjsheaders.md) | Get Next.js headers array from object containing header values by name. |
-|  [loadEnvFileIntoProcessEnv](./next-utils.loadenvfileintoprocessenv.md) | Load .env.\* into process.env using Next.js’ loadEnvConfig. |
-
+| Variable                                                               | Description                                                                                                   |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| [AslLink](./next-utils.asllink.md)                                     | Same as [next/link](https://nextjs.org/docs/api-reference/next/link)<!-- -->, but with passHref prop pre-set. |
+| [getNextJsHeaders](./next-utils.getnextjsheaders.md)                   | Get Next.js headers array from object containing header values by name.                                       |
+| [loadEnvFileIntoProcessEnv](./next-utils.loadenvfileintoprocessenv.md) | Load .env.\* into process.env using Next.js’ loadEnvConfig.                                                   |

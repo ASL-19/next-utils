@@ -1,8 +1,8 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.22.2",
-    "schemaVersion": 1005,
+    "toolVersion": "7.36.4",
+    "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
       "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
@@ -164,11 +164,13 @@
   "canonicalReference": "@asl-19/next-utils!",
   "docComment": "/**\n * Shared Next.js utility functions for ASL19 projects.\n *\n * @packageDocumentation\n */\n",
   "name": "@asl-19/next-utils",
+  "preserveMemberOrder": false,
   "members": [
     {
       "kind": "EntryPoint",
       "canonicalReference": "@asl-19/next-utils!",
       "name": "",
+      "preserveMemberOrder": false,
       "members": [
         {
           "kind": "Variable",
@@ -182,7 +184,7 @@
             {
               "kind": "Reference",
               "text": "FC",
-              "canonicalReference": "@types/react!~React.FC:type"
+              "canonicalReference": "@types/react!React.FC:type"
             },
             {
               "kind": "Content",
@@ -200,13 +202,15 @@
             {
               "kind": "Reference",
               "text": "ReactNode",
-              "canonicalReference": "@types/react!~React.ReactNode:type"
+              "canonicalReference": "@types/react!React.ReactNode:type"
             },
             {
               "kind": "Content",
               "text": ";\n}>"
             }
           ],
+          "fileUrlPath": "src/AslLink.tsx",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "AslLink",
           "variableTypeTokenRange": {
@@ -228,6 +232,8 @@
               "text": "(headers: {\n    [headerName: string]: string;\n}) => {\n    key: string;\n    value: string;\n}[]"
             }
           ],
+          "fileUrlPath": "src/getNextJsHeaders.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "getNextJsHeaders",
           "variableTypeTokenRange": {
@@ -249,6 +255,8 @@
               "text": "() => void"
             }
           ],
+          "fileUrlPath": "src/loadEnvFileIntoProcessEnv.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "loadEnvFileIntoProcessEnv",
           "variableTypeTokenRange": {

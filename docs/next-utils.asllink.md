@@ -9,12 +9,13 @@ Same as [next/link](https://nextjs.org/docs/api-reference/next/link)<!-- -->, bu
 <b>Signature:</b>
 
 ```typescript
-AslLink: FC<LinkProps & {
+AslLink: FC<
+  LinkProps & {
     children: ReactNode;
-}>
+  }
+>;
 ```
 
 ## Remarks
 
 The passHref prop needs to be set for any Next.js Link wrapping an element with the Emotion css prop (because it turns the styled element into custom component). This is an unintuitive restriction that’s likely to cause unexpected mistakes/regressions, so it’s safest to always use AslLink over Link.
-

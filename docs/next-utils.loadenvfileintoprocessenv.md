@@ -17,4 +17,3 @@ loadEnvFileIntoProcessEnv: () => void
 For dev/build/start loads .env.local; for tests loads .env.test.
 
 See https://nextjs.org/docs/basic-features/environment-variables
-
