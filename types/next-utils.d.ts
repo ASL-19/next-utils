@@ -6,6 +6,7 @@
 
 import { FC } from 'react';
 import { LinkProps } from 'next/link';
+import { NextRouter } from 'next/router';
 import { ReactNode } from 'react';
 
 /**
@@ -42,5 +43,15 @@ export declare const getNextJsHeaders: (headers: {
  * See https://nextjs.org/docs/basic-features/environment-variables
  */
 export declare const loadEnvFileIntoProcessEnv: () => void;
+
+export declare const replaceCurrentRouteWithShallowRoute: ({ router, }: {
+    router: NextRouter;
+}) => Promise<boolean>;
+
+export declare const useHrefIsActive: ({ activeUrlComparisonQueryKeys, href, webPublicUrl, }: {
+    activeUrlComparisonQueryKeys: Array<string>;
+    href: string;
+    webPublicUrl: string;
+}) => boolean;
 
 export { }

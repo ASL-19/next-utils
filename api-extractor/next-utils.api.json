@@ -263,6 +263,79 @@
             "startIndex": 1,
             "endIndex": 2
           }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@asl-19/next-utils!replaceCurrentRouteWithShallowRoute:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "replaceCurrentRouteWithShallowRoute: "
+            },
+            {
+              "kind": "Content",
+              "text": "({ router, }: {\n    router: "
+            },
+            {
+              "kind": "Reference",
+              "text": "NextRouter",
+              "canonicalReference": "next!NextRouter:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<boolean>"
+            }
+          ],
+          "fileUrlPath": "src/replaceCurrentRouteWithShallowRoute.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "replaceCurrentRouteWithShallowRoute",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@asl-19/next-utils!useHrefIsActive:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useHrefIsActive: "
+            },
+            {
+              "kind": "Content",
+              "text": "({ activeUrlComparisonQueryKeys, href, webPublicUrl, }: {\n    activeUrlComparisonQueryKeys: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Array",
+              "canonicalReference": "!Array:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<string>;\n    href: string;\n    webPublicUrl: string;\n}) => boolean"
+            }
+          ],
+          "fileUrlPath": "src/useHrefIsActive.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "useHrefIsActive",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
         }
       ]
     }

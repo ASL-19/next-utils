@@ -34,7 +34,7 @@ const useHrefIsActive = ({
     activeUrlComparisonQueryKeys.every(
       (queryKey) =>
         (!router.query[queryKey] && !parsedHref.searchParams.get(queryKey)) ||
-        router.query[queryKey] === parsedHref.searchParams.get(queryKey)
+        router.query[queryKey] === parsedHref.searchParams.get(queryKey),
     )
   );
 };
