@@ -10,10 +10,10 @@ const { loadEnvConfig } = require("@next/env");
  */
 const loadEnvFileIntoProcessEnv = () => {
   const silentConsole = {
-    log: () => {},
-    info: () => {},
-    warn: () => {},
     error: () => {},
+    info: () => {},
+    log: () => {},
+    warn: () => {},
   };
 
   loadEnvConfig(process.cwd(), false, silentConsole);
