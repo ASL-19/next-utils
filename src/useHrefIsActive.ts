@@ -1,4 +1,11 @@
 /**
+ * Determine if the passed `href` is active based on its pathname and a
+ * whitelist of query string keys.
+ *
+ * Returns true if `href`’s pathname (the part before the query string) matches
+ * the router’s pathname (parsed from `router.asPath`) and the value of each of
+ * the `activeUrlComparisonQueryKeys` matches the values in `router.query`.
+ *
  * @public
  */
 import { useRouter } from "next/router";
