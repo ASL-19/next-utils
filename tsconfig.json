@@ -3,5 +3,10 @@
   "compilerOptions": {
     "outDir": "dist"
   },
-  "include": ["*.js", "*.ts", ".eslintrc.js", "src/**/*.ts*"]
+  "include": [
+    "*.js",
+    "*.ts",
+    ".eslintrc.js",
+    "src/**/*.ts*"
+  ]
 }

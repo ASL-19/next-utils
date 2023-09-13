@@ -8,9 +8,12 @@
     "enabled": true,
     "reportFolder": "<projectFolder>/api-extractor"
   },
+  "compiler": {
+    "tsconfigFilePath": "tsconfig.json"
+  },
   "docModel": {
     "enabled": true,
-    "apiJsonFilePath": "<projectFolder>/api-extractor/<unscopedPackageName>.api.json"
+    "apiJsonFilePath": "<projectFolder>/api-extractor/next-utils.api.json"
   },
   "dtsRollup": {
     "enabled": true,
