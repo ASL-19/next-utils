@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 /**
  * Determine if the passed `href` is active based on its pathname and a
  * whitelist of query string keys.
@@ -8,8 +9,6 @@
  *
  * @public
  */
-import { useRouter } from "next/router";
-
 const useHrefIsActive = ({
   activeUrlComparisonQueryKeys,
   href,

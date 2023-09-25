@@ -9,3 +9,4 @@ jobs:
         with:
           node-version-file: .node-version
       - run: npm install
+      - run: npm run build-lint-test

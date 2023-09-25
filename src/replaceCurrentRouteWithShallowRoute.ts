@@ -1,3 +1,4 @@
+import { NextRouter } from "next/router";
 /**
  * [Replace] the current route with a [shallow route].
  *
@@ -20,7 +21,6 @@
  * @public
  */
 
-import { NextRouter } from "next/router";
 const replaceCurrentRouteWithShallowRoute = ({
   router,
 }: {

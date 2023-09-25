@@ -25,12 +25,12 @@ export const getNextJsHeaders: (headers: {
 // @public
 export const loadEnvFileIntoProcessEnv: () => void;
 
-// @public (undocumented)
+// @public
 export const replaceCurrentRouteWithShallowRoute: ({ router, }: {
     router: NextRouter;
 }) => Promise<boolean>;
 
-// @public (undocumented)
+// @public
 export const useHrefIsActive: ({ activeUrlComparisonQueryKeys, href, webPublicUrl, }: {
     activeUrlComparisonQueryKeys: Array<string>;
     href: string;
