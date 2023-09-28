@@ -35,16 +35,6 @@ export declare const getNextJsHeaders: (headers: {
 }[];
 
 /**
- * Load .env.* into process.env using Next.js’ loadEnvConfig.
- *
- * @remarks
- * For dev/build/start loads .env.local; for tests loads .env.test.
- *
- * See https://nextjs.org/docs/basic-features/environment-variables
- */
-export declare const loadEnvFileIntoProcessEnv: () => void;
-
-/**
  * [Replace] the current route with a [shallow route].
  *
  * @remarks

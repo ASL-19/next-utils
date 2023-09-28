@@ -23,9 +23,6 @@ export const getNextJsHeaders: (headers: {
 }[];
 
 // @public
-export const loadEnvFileIntoProcessEnv: () => void;
-
-// @public
 export const replaceCurrentRouteWithShallowRoute: ({ router, }: {
     router: NextRouter;
 }) => Promise<boolean>;

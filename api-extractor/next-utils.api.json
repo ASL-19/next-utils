@@ -243,29 +243,6 @@
         },
         {
           "kind": "Variable",
-          "canonicalReference": "@asl-19/next-utils!loadEnvFileIntoProcessEnv:var",
-          "docComment": "/**\n * Load .env.* into process.env using Next.js’ loadEnvConfig.\n *\n * @remarks\n *\n * For dev/build/start loads .env.local; for tests loads .env.test.\n *\n * See https://nextjs.org/docs/basic-features/environment-variables\n */\n",
-          "excerptTokens": [
-            {
-              "kind": "Content",
-              "text": "loadEnvFileIntoProcessEnv: "
-            },
-            {
-              "kind": "Content",
-              "text": "() => void"
-            }
-          ],
-          "fileUrlPath": "src/loadEnvFileIntoProcessEnv.ts",
-          "isReadonly": true,
-          "releaseTag": "Public",
-          "name": "loadEnvFileIntoProcessEnv",
-          "variableTypeTokenRange": {
-            "startIndex": 1,
-            "endIndex": 2
-          }
-        },
-        {
-          "kind": "Variable",
           "canonicalReference": "@asl-19/next-utils!replaceCurrentRouteWithShallowRoute:var",
           "docComment": "/**\n * [Replace] the current route with a [shallow route].\n *\n * @remarks\n *\n * This is useful to set the replace this initial route of shallow-routed pages (e.g. index pages with custom shallow routing logic) with a shallow route.\n *\n * Without this change if the user uses the back button/gesture to return to the initial route of a page driven by shallow routing Next.js will do an unnecessary full page load (running getServerSideProps and displaying the global loading indicator rather than the page-specific loading indicator). This isn’t inherently a problem but it’s a confusing user experience.\n *\n * Ideally Next.js add more sophisticated routing capabilities to remove the need for workarounds like this.\n *\n * [replace]: https://nextjs.org/docs/api-reference/next/router#routerreplace [shallow route]: https://nextjs.org/docs/routing/shallow-routing\n *\n * @public\n */\n",
           "excerptTokens": [
