@@ -1,14 +1,10 @@
 {
   "cSpell.words": [
-    "Embedder",
     "fbclid",
     "heaslip",
-    "maxage",
-    "nosniff",
     "rushstack",
     "tsdoc",
     "unintuitive",
-    "unscoped",
     "yalc"
   ],
   "editor.codeActionsOnSave": {
@@ -25,11 +21,7 @@
   "editor.formatOnSave": false,
   "editor.tabSize": 2,
   "editor.unicodeHighlight.allowedCharacters": {
-    "’": true,
-    "۱": true,
-    "۰": true,
-    "۵": true,
-    "۷": true
+    "’": true
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
