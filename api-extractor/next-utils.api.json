@@ -1,8 +1,8 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.22.2",
-    "schemaVersion": 1005,
+    "toolVersion": "7.38.0",
+    "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
       "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
@@ -164,56 +164,14 @@
   "canonicalReference": "@asl-19/next-utils!",
   "docComment": "/**\n * Shared Next.js utility functions for ASL19 projects.\n *\n * @packageDocumentation\n */\n",
   "name": "@asl-19/next-utils",
+  "preserveMemberOrder": false,
   "members": [
     {
       "kind": "EntryPoint",
       "canonicalReference": "@asl-19/next-utils!",
       "name": "",
+      "preserveMemberOrder": false,
       "members": [
-        {
-          "kind": "Variable",
-          "canonicalReference": "@asl-19/next-utils!AslLink:var",
-          "docComment": "/**\n * Same as {@link https://nextjs.org/docs/api-reference/next/link | next/link}, but with passHref prop pre-set.\n *\n * @remarks\n *\n * The passHref prop needs to be set for any Next.js Link wrapping an element with the Emotion css prop (because it turns the styled element into custom component). This is an unintuitive restriction that’s likely to cause unexpected mistakes/regressions, so it’s safest to always use AslLink over Link.\n */\n",
-          "excerptTokens": [
-            {
-              "kind": "Content",
-              "text": "AslLink: "
-            },
-            {
-              "kind": "Reference",
-              "text": "FC",
-              "canonicalReference": "@types/react!~React.FC:type"
-            },
-            {
-              "kind": "Content",
-              "text": "<"
-            },
-            {
-              "kind": "Reference",
-              "text": "LinkProps",
-              "canonicalReference": "next!LinkProps:type"
-            },
-            {
-              "kind": "Content",
-              "text": " & {\n    children: "
-            },
-            {
-              "kind": "Reference",
-              "text": "ReactNode",
-              "canonicalReference": "@types/react!~React.ReactNode:type"
-            },
-            {
-              "kind": "Content",
-              "text": ";\n}>"
-            }
-          ],
-          "releaseTag": "Public",
-          "name": "AslLink",
-          "variableTypeTokenRange": {
-            "startIndex": 1,
-            "endIndex": 7
-          }
-        },
         {
           "kind": "Variable",
           "canonicalReference": "@asl-19/next-utils!getNextJsHeaders:var",
@@ -228,6 +186,8 @@
               "text": "(headers: {\n    [headerName: string]: string;\n}) => {\n    key: string;\n    value: string;\n}[]"
             }
           ],
+          "fileUrlPath": "src/getNextJsHeaders.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "getNextJsHeaders",
           "variableTypeTokenRange": {
@@ -237,23 +197,75 @@
         },
         {
           "kind": "Variable",
-          "canonicalReference": "@asl-19/next-utils!loadEnvFileIntoProcessEnv:var",
-          "docComment": "/**\n * Load .env.* into process.env using Next.js’ loadEnvConfig.\n *\n * @remarks\n *\n * For dev/build/start loads .env.local; for tests loads .env.test.\n *\n * See https://nextjs.org/docs/basic-features/environment-variables\n */\n",
+          "canonicalReference": "@asl-19/next-utils!replaceCurrentRouteWithShallowRoute:var",
+          "docComment": "/**\n * [Replace] the current route with a [shallow route].\n *\n * @remarks\n *\n * This is useful to set the replace this initial route of shallow-routed pages (e.g. index pages with custom shallow routing logic) with a shallow route.\n *\n * Without this change if the user uses the back button/gesture to return to the initial route of a page driven by shallow routing Next.js will do an unnecessary full page load (running getServerSideProps and displaying the global loading indicator rather than the page-specific loading indicator). This isn’t inherently a problem but it’s a confusing user experience.\n *\n * Ideally Next.js add more sophisticated routing capabilities to remove the need for workarounds like this.\n *\n * [replace]: https://nextjs.org/docs/api-reference/next/router#routerreplace [shallow route]: https://nextjs.org/docs/routing/shallow-routing\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "loadEnvFileIntoProcessEnv: "
+              "text": "replaceCurrentRouteWithShallowRoute: "
             },
             {
               "kind": "Content",
-              "text": "() => void"
+              "text": "({ router, }: {\n    router: "
+            },
+            {
+              "kind": "Reference",
+              "text": "NextRouter",
+              "canonicalReference": "next!NextRouter:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<boolean>"
             }
           ],
+          "fileUrlPath": "src/replaceCurrentRouteWithShallowRoute.ts",
+          "isReadonly": true,
           "releaseTag": "Public",
-          "name": "loadEnvFileIntoProcessEnv",
+          "name": "replaceCurrentRouteWithShallowRoute",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 2
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "@asl-19/next-utils!useHrefIsActive:var",
+          "docComment": "/**\n * Determine if the passed `href` is active based on its pathname and a whitelist of query string keys.\n *\n * Returns true if `href`’s pathname (the part before the query string) matches the router’s pathname (parsed from `router.asPath`) and the value of each of the `activeUrlComparisonQueryKeys` matches the values in `router.query`.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useHrefIsActive: "
+            },
+            {
+              "kind": "Content",
+              "text": "({ activeUrlComparisonQueryKeys, href, webPublicUrl, }: {\n    activeUrlComparisonQueryKeys: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Array",
+              "canonicalReference": "!Array:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<string>;\n    href: string;\n    webPublicUrl: string;\n}) => boolean"
+            }
+          ],
+          "fileUrlPath": "src/useHrefIsActive.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "useHrefIsActive",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
           }
         }
       ]

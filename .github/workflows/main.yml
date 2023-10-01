@@ -1,26 +1,12 @@
 on: push
 
 jobs:
-  lint-and-build:
-    runs-on: ubuntu-latest
-
+  build-lint-test:
+    runs-on: ubuntu-22.04
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Use Node.js 16.x
-      uses: actions/setup-node@v1
-      with:
-        node-version: 16.x
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build
-      run: npm run build
-
-    - name: Run API Extractor check
-      run: npm run api-extractor:check
-
-    - name: Run ESLint
-      run: npm run eslint
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: .node-version
+      - run: npm install
+      - run: npm run build-lint-test

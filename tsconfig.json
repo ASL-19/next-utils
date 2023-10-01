@@ -1,18 +1,12 @@
 {
+  "extends": "@asl-19/shared-package-configs/tsconfig-base.json",
   "compilerOptions": {
-    "declaration": true,
-    "declarationMap": true,
-    "esModuleInterop": true,
-    "jsx": "react",
-    "module": "CommonJS",
-    "moduleResolution": "Node",
-    "noImplicitAny": true,
-    "outDir": "dist/cjs",
-    "target": "ES5"
+    "outDir": "dist"
   },
   "include": [
-    "src/**/*.ts*",
     "*.js",
-    "next-env.d.ts",
-  ],
+    "*.ts",
+    ".eslintrc.js",
+    "src/**/*.ts*"
+  ]
 }

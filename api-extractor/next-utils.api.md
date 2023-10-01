@@ -4,14 +4,7 @@
 
 ```ts
 
-import { FC } from 'react';
-import { LinkProps } from 'next/link';
-import { ReactNode } from 'react';
-
-// @public
-export const AslLink: FC<LinkProps & {
-    children: ReactNode;
-}>;
+import { NextRouter } from 'next/router';
 
 // @public
 export const getNextJsHeaders: (headers: {
@@ -22,6 +15,15 @@ export const getNextJsHeaders: (headers: {
 }[];
 
 // @public
-export const loadEnvFileIntoProcessEnv: () => void;
+export const replaceCurrentRouteWithShallowRoute: ({ router, }: {
+    router: NextRouter;
+}) => Promise<boolean>;
+
+// @public
+export const useHrefIsActive: ({ activeUrlComparisonQueryKeys, href, webPublicUrl, }: {
+    activeUrlComparisonQueryKeys: Array<string>;
+    href: string;
+    webPublicUrl: string;
+}) => boolean;
 
 ```
