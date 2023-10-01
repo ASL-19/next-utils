@@ -174,52 +174,6 @@
       "members": [
         {
           "kind": "Variable",
-          "canonicalReference": "@asl-19/next-utils!AslLink:var",
-          "docComment": "/**\n * Same as {@link https://nextjs.org/docs/api-reference/next/link | next/link}, but with passHref prop pre-set.\n *\n * @remarks\n *\n * The passHref prop needs to be set for any Next.js Link wrapping an element with the Emotion css prop (because it turns the styled element into custom component). This is an unintuitive restriction that’s likely to cause unexpected mistakes/regressions, so it’s safest to always use AslLink over Link.\n */\n",
-          "excerptTokens": [
-            {
-              "kind": "Content",
-              "text": "AslLink: "
-            },
-            {
-              "kind": "Reference",
-              "text": "FC",
-              "canonicalReference": "@types/react!React.FC:type"
-            },
-            {
-              "kind": "Content",
-              "text": "<"
-            },
-            {
-              "kind": "Reference",
-              "text": "LinkProps",
-              "canonicalReference": "next!LinkProps:type"
-            },
-            {
-              "kind": "Content",
-              "text": " & {\n    children: "
-            },
-            {
-              "kind": "Reference",
-              "text": "ReactNode",
-              "canonicalReference": "@types/react!React.ReactNode:type"
-            },
-            {
-              "kind": "Content",
-              "text": ";\n}>"
-            }
-          ],
-          "fileUrlPath": "src/AslLink.tsx",
-          "isReadonly": true,
-          "releaseTag": "Public",
-          "name": "AslLink",
-          "variableTypeTokenRange": {
-            "startIndex": 1,
-            "endIndex": 7
-          }
-        },
-        {
-          "kind": "Variable",
           "canonicalReference": "@asl-19/next-utils!getNextJsHeaders:var",
           "docComment": "/**\n * Get Next.js headers array from object containing header values by name.\n */\n",
           "excerptTokens": [
