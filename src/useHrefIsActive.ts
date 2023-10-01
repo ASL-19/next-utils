@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+
 /**
  * Determine if the passed `href` is active based on its pathname and a
  * whitelist of query string keys.
