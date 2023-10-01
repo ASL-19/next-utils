@@ -2,11 +2,18 @@
   "name": "@asl-19/next-utils",
   "version": "0.5.0",
   "description": "Shared Next.js utility functions for ASL19 projects",
-  "author": {
-    "name": "Grant Heaslip",
-    "email": "grant@asl19.org",
-    "url": "https://asl19.org/"
-  },
+  "contributors": [
+    {
+      "name": "Grant Heaslip",
+      "email": "grant@asl19.org",
+      "url": "https://asl19.org/"
+    },
+    {
+      "name": "Min Van",
+      "email": "min@asl19.org",
+      "url": "https://asl19.org/"
+    }
+  ],
   "license": "GPL-3.0-or-later",
   "repository": "ASL-19/next-utils",
   "engines": {
