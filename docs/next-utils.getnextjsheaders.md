@@ -6,7 +6,7 @@
 
 Get Next.js headers array from object containing header values by name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getNextJsHeaders: (headers: {

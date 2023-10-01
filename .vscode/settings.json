@@ -1,31 +1,44 @@
 {
   "cSpell.words": [
-    "Embedder",
+    "fbclid",
     "heaslip",
-    "maxage",
-    "nosniff",
+    "rushstack",
     "tsdoc",
     "unintuitive",
-    "unscoped",
     "yalc"
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "eslint.validate": ["javascript", "typescript"],
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "typescript"
+  ],
   "files.associations": {
     "api-extractor.json": "jsonc"
+  },
+  "editor.formatOnSave": false,
+  "editor.tabSize": 2,
+  "editor.unicodeHighlight.allowedCharacters": {
+    "’": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "redhat.telemetry.enabled": false,
+  "rewrap.reformat": true,
+  "rewrap.wrappingColumn": 80,
+  "[javascript][json][jsonc][markdown][typescript][yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "search.exclude": {
     "api-extractor/**/*": true,
     "CHANGELOG": true,
     "docs/**/*": true,
     "LICENSE": true,
-    "package-lock.json": true,
     "types/**/*": true
   },
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "[json]": {
-    "editor.formatOnSave": true
-  }
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

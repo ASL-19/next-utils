@@ -1,29 +1,8 @@
 /**
  * Config file for API Extractor.  For more info, please visit: https://api-extractor.com
  */
- {
+{
   "$schema": "https://developer.microsoft.com/json-schemas/api-extractor/v7/api-extractor.schema.json",
-  "mainEntryPointFilePath": "<projectFolder>/dist/esm/index.d.ts",
-  "apiReport": {
-    "enabled": true,
-    "reportFolder": "<projectFolder>/api-extractor"
-  },
-  "docModel": {
-    "enabled": true,
-    "apiJsonFilePath": "<projectFolder>/api-extractor/<unscopedPackageName>.api.json"
-  },
-  "dtsRollup": {
-    "enabled": true,
-    "untrimmedFilePath": "<projectFolder>/types/<unscopedPackageName>.d.ts"
-  },
-  "messages": {
-    "extractorMessageReporting": {
-      "ae-missing-release-tag": {
-        "logLevel": "none"
-      }
-    }
-  },
-  "tsdocMetadata": {
-    "enabled": false
-  }
+  "extends": "@asl-19/shared-package-configs/api-extractor.json",
+  "mainEntryPointFilePath": "<projectFolder>/dist/esm/index.d.ts"
 }
