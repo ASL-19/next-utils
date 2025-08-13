@@ -11,4 +11,4 @@ const prettierConfig = {
   ],
 };
 
-export default prettierConfig;
+module.exports = prettierConfig;

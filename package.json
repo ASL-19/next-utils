@@ -2,6 +2,7 @@
   "name": "@asl-19/next-utils",
   "version": "0.6.0",
   "description": "Shared Next.js utility functions for ASL19 projects",
+  "type": "module",
   "contributors": [
     {
       "name": "Grant Heaslip",
@@ -21,50 +22,49 @@
   },
   "files": [
     "dist/**/*.js",
-    "types/**/*.d.ts"
+    "dist/**/*.d.ts"
   ],
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "types/next-utils.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "default": "./dist/index.js"
+  },
   "sideEffects": false,
   "scripts": {
     "api-extractor-check": "api-extractor run --verbose",
     "api-extractor-update": "api-extractor run --local --verbose && api-documenter markdown --input-folder ./api-extractor --output-folder ./docs",
-    "build-lint-test": "npm-run-all -l -p tsc-cjs tsc-esm -s lint-test",
+    "build-lint-test": "npm-run-all -l -p tsc -s lint-test",
     "rm-dist": "rm -rf dist",
-    "dev": "npm-run-all -l -s package-changed -p tsc-cjs-watch tsc-esm-watch",
+    "dev": "npm-run-all -l -s package-changed -p tsc-watch",
     "dev-lint-test": "run-s package-changed lint-test",
     "eslint-check": "eslint . --ext='js,ts,tsx'",
     "eslint-fix": "eslint . --ext='js,ts,tsx' --fix",
-    "lint-test": "run-p -l api-extractor-check eslint-check prettier-check tsc-check",
+    "lint-test": "run-p -l api-extractor-check prettier-check tsc-check",
     "package-changed": "package-changed",
     "prepublishOnly": "run-s rm-dist build-lint-test",
-    "prettier-check": "prettier --check .",
-    "prettier-fix": "prettier --write .",
+    "prettier-check": "prettier --config prettier.config.cjs --check .",
+    "prettier-fix": "prettier --config prettier.config.cjs --write .",
     "npm-check-updates": "npm-check-updates",
-    "tsc-cjs": "tsc --project tsconfig-cjs.json",
-    "tsc-cjs-watch": "tsc --project tsconfig-cjs.json --watch",
-    "tsc-esm": "tsc --project tsconfig-esm.json",
-    "tsc-esm-watch": "tsc --project tsconfig-esm.json --watch",
+    "tsc": "tsc --project tsconfig-esm.json",
+    "tsc-watch": "tsc --project tsconfig-esm.json --watch",
     "tsc-check": "tsc --noEmit"
   },
   "devDependencies": {
-    "@asl-19/eslint-config": "^0.8.0",
+    "@asl-19/eslint-config": "^0.9.0",
     "@asl-19/shared-package-configs": "^0.3.0",
-    "@microsoft/api-documenter": "^7.23.9",
-    "@microsoft/api-extractor": "^7.38.0",
-    "@testing-library/react": "^14.0.0",
-    "@types/jest": "^29.5.5",
-    "@types/react": "^18.2.24",
-    "@types/react-dom": "^18.2.8",
-    "eslint": "^8.50.0",
+    "@microsoft/api-documenter": "^7.26.31",
+    "@microsoft/api-extractor": "^7.52.10",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^30.0.0",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "eslint": "^9.33.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
-    "jest": "^29.7.0",
-    "npm-check-updates": "^16.14.4",
+    "jest": "^30.0.5",
+    "npm-check-updates": "^18.0.2",
     "npm-run-all": "^4.1.5",
     "package-changed": "^3.0.0",
-    "prettier": "^3.0.3",
-    "typescript": "^5.2.2"
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2"
   },
   "overrides": {
     "@typescript-eslint/parser": "6.6.0"

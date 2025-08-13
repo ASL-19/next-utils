@@ -1,6 +1,4 @@
-import { Header } from "next/dist/lib/load-custom-routes";
-
-type NextJsHeadersArray = Header["headers"];
+type NextJsHeadersArray = Array<{ key: string; value: string }>;
 
 /**
  * Get Next.js headers array from object containing header values by name.

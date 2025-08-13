@@ -11,10 +11,12 @@ import { NextRouter } from 'next/router';
  */
 export declare const getNextJsHeaders: (headers: {
     [headerName: string]: string;
-}) => {
+}) => NextJsHeadersArray;
+
+declare type NextJsHeadersArray = Array<{
     key: string;
     value: string;
-}[];
+}>;
 
 /**
  * [Replace] the current route with a [shallow route].

@@ -6,7 +6,27 @@
 
 ## Packages
 
-|  Package | Description |
-|  --- | --- |
-|  [@asl-19/next-utils](./next-utils.md) | Shared Next.js utility functions for ASL19 projects. |
+<table><thead><tr><th>
+
+Package
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[@asl-19/next-utils](./next-utils.md)
+
+
+</td><td>
+
+Shared Next.js utility functions for ASL19 projects.
+
+
+</td></tr>
+</tbody></table>
 

@@ -25,7 +25,6 @@
 - Removed `cspHeaderPreset` and `defaultGlobalHeaders` [**Breaking**] [[#6](https://github.com/ASL-19/next-utils/pull/6)]
 
   In hindsight these weren’t worth centralizing:
-
   - `cspHeaderPreset` was problematic because the default `NONE` directives were invalid if the consuming project added other directives.
 
   - `defaultGlobalHeaders` obfuscated important header information that developers (including on other teams) may need to reference.

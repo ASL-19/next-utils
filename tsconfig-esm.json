@@ -1,7 +1,9 @@
 {
   "extends": "@asl-19/shared-package-configs/tsconfig-esm.json",
   "compilerOptions": {
-    "outDir": "dist/esm"
+    "outDir": "dist",
+    "moduleResolution": "Bundler",
+    "skipLibCheck": true
   },
   "include": [
     "src/**/*.ts*"

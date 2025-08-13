@@ -17,7 +17,7 @@ This package is developed with Node.js 18 (the active LTS [release](https://node
 In this folder:
 
 ```sh
-# Watch src and build into dist/cjs and dist/esm on change
+# Watch src and build into dist on change
 npm run dev
 ```
 
