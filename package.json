@@ -41,8 +41,8 @@
     "lint-test": "run-p -l api-extractor-check prettier-check tsc-check",
     "package-changed": "package-changed",
     "prepublishOnly": "run-s rm-dist build-lint-test",
-    "prettier-check": "prettier --config prettier.config.cjs --check .",
-    "prettier-fix": "prettier --config prettier.config.cjs --write .",
+    "prettier-check": "prettier --check .",
+    "prettier-fix": "prettier --write .",
     "npm-check-updates": "npm-check-updates",
     "tsc": "tsc --project tsconfig-esm.json",
     "tsc-watch": "tsc --project tsconfig-esm.json --watch",
@@ -58,7 +58,6 @@
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "eslint": "^9.33.0",
-    "eslint-plugin-sort-keys-fix": "^1.1.2",
     "jest": "^30.0.5",
     "npm-check-updates": "^18.0.2",
     "npm-run-all": "^4.1.5",
@@ -66,12 +65,9 @@
     "prettier": "^3.6.2",
     "typescript": "^5.9.2"
   },
-  "overrides": {
-    "@typescript-eslint/parser": "6.6.0"
-  },
   "peerDependencies": {
-    "next": "^13.5.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "next": "^13.5.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

@@ -2,6 +2,7 @@
   "cSpell.words": [
     "fbclid",
     "heaslip",
+    "packagehash",
     "rushstack",
     "tsdoc",
     "unintuitive",
@@ -38,7 +39,7 @@
     "CHANGELOG": true,
     "docs/**/*": true,
     "LICENSE": true,
-    "types/**/*": true
+    "package-lock.json": true
   },
   "typescript.tsdk": "node_modules/typescript/lib"
 }
