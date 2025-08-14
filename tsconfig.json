@@ -4,12 +4,11 @@
     "checkJs": true,
     "declaration": true,
     "incremental": true,
-    "module": "esnext",
+    "module": "preserve", // "esnext" breaks next/router.js imports (unclear why)
     "outDir": "dist",
     "strict": true,
-    "target": "es2021",
-    "moduleResolution": "Bundler",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "target": "es2021"
   },
   "include": [
     "*.js",

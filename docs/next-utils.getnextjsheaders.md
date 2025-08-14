@@ -9,9 +9,7 @@ Get Next.js headers array from object containing header values by name.
 **Signature:**
 
 ```typescript
-getNextJsHeaders: (headers: {
-    [headerName: string]: string;
-}) => NextJsHeadersArray
+getNextJsHeaders: (headers: Record<string, string>) => NextJsHeadersArray
 ```
 
 ## Parameters
@@ -39,7 +37,7 @@ headers
 
 </td><td>
 
-{ \[headerName: string\]: string; }
+Record&lt;string, string&gt;
 
 
 </td><td>

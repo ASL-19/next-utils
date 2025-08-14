@@ -4,14 +4,12 @@
 
 ```ts
 
-import { NextRouter } from 'next/router';
+import { NextRouter } from 'next/router.js';
 
 // Warning: (ae-forgotten-export) The symbol "NextJsHeadersArray" needs to be exported by the entry point index.d.ts
 //
 // @public
-export const getNextJsHeaders: (headers: {
-    [headerName: string]: string;
-}) => NextJsHeadersArray;
+export const getNextJsHeaders: (headers: Record<string, string>) => NextJsHeadersArray;
 
 // @public
 export const replaceCurrentRouteWithShallowRoute: ({ router, }: {

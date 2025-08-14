@@ -182,8 +182,13 @@
               "text": "getNextJsHeaders: (headers: "
             },
             {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
               "kind": "Content",
-              "text": "{\n    [headerName: string]: string;\n}"
+              "text": "<string, string>"
             },
             {
               "kind": "Content",
@@ -197,8 +202,8 @@
           ],
           "fileUrlPath": "dist/getNextJsHeaders.d.ts",
           "returnTypeTokenRange": {
-            "startIndex": 3,
-            "endIndex": 4
+            "startIndex": 4,
+            "endIndex": 5
           },
           "releaseTag": "Public",
           "overloadIndex": 1,
@@ -207,7 +212,7 @@
               "parameterName": "headers",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
-                "endIndex": 2
+                "endIndex": 3
               },
               "isOptional": false
             }
