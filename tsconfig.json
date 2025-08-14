@@ -1,7 +1,14 @@
 {
   "extends": "@asl-19/shared-package-configs/tsconfig-base.json",
   "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "incremental": true,
+    "module": "esnext",
     "outDir": "dist",
+    "strict": true,
+    "target": "es2021",
     "moduleResolution": "Bundler",
     "skipLibCheck": true
   },
