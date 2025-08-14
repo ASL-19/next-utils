@@ -1,5 +1,4 @@
 {
-  "extends": "@asl-19/shared-package-configs/tsconfig-base.json",
   "compilerOptions": {
     "allowJs": true,
     "checkJs": true,
