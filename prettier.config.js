@@ -1,5 +1,5 @@
+/** @type {import("prettier").Config} */
 const prettierConfig = {
-  // eslint-disable-next-line sort-keys-fix/sort-keys-fix
   overrides: [
     {
       files: ["*.json"],
@@ -11,4 +11,4 @@ const prettierConfig = {
   ],
 };
 
-module.exports = prettierConfig;
+export default prettierConfig;

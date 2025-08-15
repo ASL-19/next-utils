@@ -1,7 +1,14 @@
 {
-  "extends": "@asl-19/shared-package-configs/tsconfig-base.json",
   "compilerOptions": {
-    "outDir": "dist"
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "incremental": true,
+    "module": "preserve", // "esnext" breaks next/router.js imports (unclear why)
+    "outDir": "dist",
+    "strict": true,
+    "skipLibCheck": true,
+    "target": "es2021"
   },
   "include": [
     "*.js",
