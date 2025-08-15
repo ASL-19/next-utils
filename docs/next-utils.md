@@ -6,11 +6,53 @@
 
 Shared Next.js utility functions for ASL19 projects.
 
-## Variables
+## Functions
 
-|  Variable | Description |
-|  --- | --- |
-|  [getNextJsHeaders](./next-utils.getnextjsheaders.md) | Get Next.js headers array from object containing header values by name. |
-|  [replaceCurrentRouteWithShallowRoute](./next-utils.replacecurrentroutewithshallowroute.md) | \[Replace\] the current route with a \[shallow route\]. |
-|  [useHrefIsActive](./next-utils.usehrefisactive.md) | <p>Determine if the passed <code>href</code> is active based on its pathname and a whitelist of query string keys.</p><p>Returns true if <code>href</code>’s pathname (the part before the query string) matches the router’s pathname (parsed from <code>router.asPath</code>) and the value of each of the <code>activeUrlComparisonQueryKeys</code> matches the values in <code>router.query</code>.</p> |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getNextJsHeaders(headers)](./next-utils.getnextjsheaders.md)
+
+
+</td><td>
+
+Get Next.js headers array from object containing header values by name.
+
+
+</td></tr>
+<tr><td>
+
+[replaceCurrentRouteWithShallowRoute({ router, })](./next-utils.replacecurrentroutewithshallowroute.md)
+
+
+</td><td>
+
+\[Replace\] the current route with a \[shallow route\].
+
+
+</td></tr>
+<tr><td>
+
+[useHrefIsActive({ activeUrlComparisonQueryKeys, href, webPublicUrl, })](./next-utils.usehrefisactive.md)
+
+
+</td><td>
+
+Determine if the passed `href` is active based on its pathname and a whitelist of query string keys.
+
+Returns true if `href`<!-- -->’s pathname (the part before the query string) matches the router’s pathname (parsed from `router.asPath`<!-- -->) and the value of each of the `activeUrlComparisonQueryKeys` matches the values in `router.query`<!-- -->.
+
+
+</td></tr>
+</tbody></table>
 

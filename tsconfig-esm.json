@@ -1,9 +1,0 @@
-{
-  "extends": "@asl-19/shared-package-configs/tsconfig-esm.json",
-  "compilerOptions": {
-    "outDir": "dist/esm"
-  },
-  "include": [
-    "src/**/*.ts*"
-  ]
-}

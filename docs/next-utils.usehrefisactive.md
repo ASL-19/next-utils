@@ -2,7 +2,7 @@
 
 [Home](./index.md) &gt; [@asl-19/next-utils](./next-utils.md) &gt; [useHrefIsActive](./next-utils.usehrefisactive.md)
 
-## useHrefIsActive variable
+## useHrefIsActive() function
 
 Determine if the passed `href` is active based on its pathname and a whitelist of query string keys.
 
@@ -17,3 +17,42 @@ useHrefIsActive: ({ activeUrlComparisonQueryKeys, href, webPublicUrl, }: {
     webPublicUrl: string;
 }) => boolean
 ```
+
+## Parameters
+
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ activeUrlComparisonQueryKeys, href, webPublicUrl, }
+
+
+</td><td>
+
+{ activeUrlComparisonQueryKeys: Array&lt;string&gt;; href: string; webPublicUrl: string; }
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
+
+boolean
+

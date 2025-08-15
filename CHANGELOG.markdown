@@ -1,5 +1,10 @@
 # @asl-19/next-utils changelog
 
+## [1.0.0](https://github.com/ASL-19/next-utils/pulls?q=is%3Apr+is%3Aclosed+milestone%3A1.0.0) [2025-08-15]
+
+- Migrate to ESM [[#14](https://github.com/ASL-19/next-utils/pull/14)]
+- Increase `next`, `react`, and `react-dom` `peerDependencies` versions [[#15](https://github.com/ASL-19/next-utils/pull/15)]
+
 ## [0.6.0](https://github.com/ASL-19/next-utils/pulls?q=is%3Apr+is%3Aclosed+milestone%3A0.5.0) [2023-10-01]
 
 ### Changes
@@ -25,7 +30,6 @@
 - Removed `cspHeaderPreset` and `defaultGlobalHeaders` [**Breaking**] [[#6](https://github.com/ASL-19/next-utils/pull/6)]
 
   In hindsight these weren’t worth centralizing:
-
   - `cspHeaderPreset` was problematic because the default `NONE` directives were invalid if the consuming project added other directives.
 
   - `defaultGlobalHeaders` obfuscated important header information that developers (including on other teams) may need to reference.

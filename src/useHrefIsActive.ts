@@ -1,4 +1,4 @@
-import { useRouter } from "next/router";
+import { useRouter } from "next/router.js";
 
 /**
  * Determine if the passed `href` is active based on its pathname and a

@@ -2,13 +2,14 @@
   "cSpell.words": [
     "fbclid",
     "heaslip",
+    "packagehash",
     "rushstack",
     "tsdoc",
     "unintuitive",
     "yalc"
   ],
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "eslint.enable": true,
   "eslint.validate": [
@@ -38,7 +39,7 @@
     "CHANGELOG": true,
     "docs/**/*": true,
     "LICENSE": true,
-    "types/**/*": true
+    "package-lock.json": true
   },
   "typescript.tsdk": "node_modules/typescript/lib"
 }

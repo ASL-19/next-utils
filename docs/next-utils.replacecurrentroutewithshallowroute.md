@@ -2,7 +2,7 @@
 
 [Home](./index.md) &gt; [@asl-19/next-utils](./next-utils.md) &gt; [replaceCurrentRouteWithShallowRoute](./next-utils.replacecurrentroutewithshallowroute.md)
 
-## replaceCurrentRouteWithShallowRoute variable
+## replaceCurrentRouteWithShallowRoute() function
 
 \[Replace\] the current route with a \[shallow route\].
 
@@ -13,6 +13,44 @@ replaceCurrentRouteWithShallowRoute: ({ router, }: {
     router: NextRouter;
 }) => Promise<boolean>
 ```
+
+## Parameters
+
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ router, }
+
+
+</td><td>
+
+{ router: NextRouter; }
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
+
+Promise&lt;boolean&gt;
 
 ## Remarks
 

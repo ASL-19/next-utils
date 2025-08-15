@@ -2,17 +2,51 @@
 
 [Home](./index.md) &gt; [@asl-19/next-utils](./next-utils.md) &gt; [getNextJsHeaders](./next-utils.getnextjsheaders.md)
 
-## getNextJsHeaders variable
+## getNextJsHeaders() function
 
 Get Next.js headers array from object containing header values by name.
 
 **Signature:**
 
 ```typescript
-getNextJsHeaders: (headers: {
-    [headerName: string]: string;
-}) => {
-    key: string;
-    value: string;
-}[]
+getNextJsHeaders: (headers: Record<string, string>) => NextJsHeadersArray
 ```
+
+## Parameters
+
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+headers
+
+
+</td><td>
+
+Record&lt;string, string&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
+
+**Returns:**
+
+NextJsHeadersArray
+
