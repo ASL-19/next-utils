@@ -1,6 +1,6 @@
 {
   "name": "@asl-19/next-utils",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "description": "Shared Next.js utility functions for ASL19 projects",
   "type": "module",
   "contributors": [
