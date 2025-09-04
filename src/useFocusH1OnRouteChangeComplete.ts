@@ -1,5 +1,5 @@
 import { focusElement } from "@asl-19/js-dom-utils";
-import { useRouter } from "next/router";
+import { useRouter } from "next/router.js";
 import { useEffect } from "react";
 
 type RouterEventHandler = (
@@ -7,10 +7,9 @@ type RouterEventHandler = (
   { shallow }: { shallow: boolean },
 ) => void;
 
-
 /**
-* Focus h1#main-heading on Next.js routeChangeComplete event.
-*
+ * Focus h1#main-heading on Next.js routeChangeComplete event.
+ *
  * @public
  */
 const useFocusH1OnRouteChangeComplete = () => {

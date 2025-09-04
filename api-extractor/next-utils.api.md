@@ -5,11 +5,41 @@
 ```ts
 
 import { NextRouter } from 'next/router.js';
+import { ParsedUrlQuery } from 'querystring';
 
 // Warning: (ae-forgotten-export) The symbol "NextJsHeadersArray" needs to be exported by the entry point index.d.ts
 //
 // @public
 export const getNextJsHeaders: (headers: Record<string, string>) => NextJsHeadersArray;
+
+// @public
+export type IndexPageGetPreviewsAndHasNextPage<PageNormalizedQuery, Preview> = (queryInfo: IndexPageQueryInfo<PageNormalizedQuery>) => Promise<{
+    hasNextPage: boolean;
+    previews: Array<Preview>;
+}>;
+
+// @public
+export type IndexPageLoadingState = {
+    type: "error";
+} | {
+    type: "hasMore";
+} | {
+    type: "hasNoMore";
+} | {
+    type: "hasNone";
+} | {
+    type: "loadingMore";
+} | {
+    type: "loadingNew";
+};
+
+// @public
+export type IndexPageQueryInfo<PageNormalizedQuery> = {
+    isLoadMoreQuery: boolean;
+    localeCode: string;
+    normalizedQuery: PageNormalizedQuery;
+    normalizedQueryHasChanged?: boolean;
+};
 
 // @public
 export const replaceCurrentRouteWithShallowRoute: ({ router, }: {
@@ -25,5 +55,28 @@ export const useHrefIsActive: ({ activeUrlComparisonQueryKeys, href, webPublicUr
     href: string;
     webPublicUrl: string;
 }) => boolean;
+
+// @public
+export const useIndexPageLoadingAndQueryLogic: <PageNormalizedQuery extends {
+    count: number;
+}, Preview extends {
+    id: string;
+}>({ announceLoadingNewItemsComplete, announceLoadingNewItemsStarted, getPageNormalizedQuery, getPreviewElementId, getPreviewsAndHasNextPage, initialHasNextPage, initialPreviews, localeCode, queryKeyPrefix, }: {
+    announceLoadingNewItemsComplete: ({ count }: {
+        count: number;
+    }) => void;
+    announceLoadingNewItemsStarted: () => void;
+    getPageNormalizedQuery: (query: ParsedUrlQuery) => PageNormalizedQuery;
+    getPreviewElementId: (preview: Preview) => string;
+    getPreviewsAndHasNextPage: IndexPageGetPreviewsAndHasNextPage<PageNormalizedQuery, Preview>;
+    initialHasNextPage: boolean;
+    initialPreviews: Array<Preview>;
+    localeCode: string;
+    queryKeyPrefix: string;
+}) => {
+    indexPageLoadingState: IndexPageLoadingState;
+    previews: Preview[];
+    queryInfo: IndexPageQueryInfo<PageNormalizedQuery>;
+};
 
 ```

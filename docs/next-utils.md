@@ -65,5 +65,72 @@ Returns true if `href`<!-- -->’s pathname (the part before the query string) m
 
 
 </td></tr>
+<tr><td>
+
+[useIndexPageLoadingAndQueryLogic({ announceLoadingNewItemsComplete, announceLoadingNewItemsStarted, getPageNormalizedQuery, getPreviewElementId, getPreviewsAndHasNextPage, initialHasNextPage, initialPreviews, localeCode, queryKeyPrefix, })](./next-utils.useindexpageloadingandquerylogic.md)
+
+
+</td><td>
+
+Fetch and display new items when query changes.
+
+Takes two type parameters:
+
+1. The page’s NormalizedQuery type. 2. The page’s preview item type (i.e. the type set by `setPreviews`<!-- -->, and the type fetched by `fetchNewItems`<!-- -->)
+
+
+</td></tr>
+</tbody></table>
+
+## Type Aliases
+
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[IndexPageGetPreviewsAndHasNextPage](./next-utils.indexpagegetpreviewsandhasnextpage.md)
+
+
+</td><td>
+
+Index page getPreviewsAndHasNextPage function.
+
+
+</td></tr>
+<tr><td>
+
+[IndexPageLoadingState](./next-utils.indexpageloadingstate.md)
+
+
+</td><td>
+
+Index page loading state. One of these possible types:
+
+- `error`<!-- -->: Encountered an error/timeout while loading new items - `loadingNew`<!-- -->: Loading a new set of items (because filter/ordering changed) - `loadingMore`<!-- -->: Loading more of the current set of items - `hasMore`<!-- -->: Has more items to load (should show "Load more" link) - `hasNoMore`<!-- -->: Has no more items to load (should NOT show load more link) - `hasNone`<!-- -->: Has no items (should show "No items" message)
+
+
+</td></tr>
+<tr><td>
+
+[IndexPageQueryInfo](./next-utils.indexpagequeryinfo.md)
+
+
+</td><td>
+
+Index page query info.
+
+This is used to update indexPageLoadingState, and is passed to getPreviewsAndHasNextPage.
+
+
+</td></tr>
 </tbody></table>
 
