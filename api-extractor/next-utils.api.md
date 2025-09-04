@@ -17,6 +17,9 @@ export const replaceCurrentRouteWithShallowRoute: ({ router, }: {
 }) => Promise<boolean>;
 
 // @public
+export const useFocusH1OnRouteChangeComplete: () => void;
+
+// @public
 export const useHrefIsActive: ({ activeUrlComparisonQueryKeys, href, webPublicUrl, }: {
     activeUrlComparisonQueryKeys: Array<string>;
     href: string;

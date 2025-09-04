@@ -43,6 +43,17 @@ Get Next.js headers array from object containing header values by name.
 </td></tr>
 <tr><td>
 
+[useFocusH1OnRouteChangeComplete()](./next-utils.usefocush1onroutechangecomplete.md)
+
+
+</td><td>
+
+Focus h1\#main-heading on Next.js routeChangeComplete event.
+
+
+</td></tr>
+<tr><td>
+
 [useHrefIsActive({ activeUrlComparisonQueryKeys, href, webPublicUrl, })](./next-utils.usehrefisactive.md)
 
 

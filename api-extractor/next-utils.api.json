@@ -276,6 +276,30 @@
         },
         {
           "kind": "Function",
+          "canonicalReference": "@asl-19/next-utils!useFocusH1OnRouteChangeComplete:function(1)",
+          "docComment": "/**\n * Focus h1#main-heading on Next.js routeChangeComplete event.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "useFocusH1OnRouteChangeComplete: () => "
+            },
+            {
+              "kind": "Content",
+              "text": "void"
+            }
+          ],
+          "fileUrlPath": "dist/useFocusH1OnRouteChangeComplete.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [],
+          "name": "useFocusH1OnRouteChangeComplete"
+        },
+        {
+          "kind": "Function",
           "canonicalReference": "@asl-19/next-utils!useHrefIsActive:function(1)",
           "docComment": "/**\n * Determine if the passed `href` is active based on its pathname and a whitelist of query string keys.\n *\n * Returns true if `href`’s pathname (the part before the query string) matches the router’s pathname (parsed from `router.asPath`) and the value of each of the `activeUrlComparisonQueryKeys` matches the values in `router.query`.\n *\n * @public\n */\n",
           "excerptTokens": [
