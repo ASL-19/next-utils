@@ -1,5 +1,7 @@
 /** @type {import("prettier").Config} */
 const prettierConfig = {
+  trailingComma: "all",
+  // eslint-disable-next-line perfectionist/sort-objects
   overrides: [
     {
       files: ["*.json"],
