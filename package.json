@@ -88,6 +88,9 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
+  "dependencies": {
+    "@asl-19/js-dom-utils": "^1.0.0"
+  },
   "allowScripts": {
     "fsevents": false
   }
