@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Add `useFocusH1OnRouteChangeComplete`, which focuses the page’s `<h1>` (or an element matching `selector`) after non-shallow route changes, unless `shouldSkipFocus` returns true
+- Add `useIndexPageLoadingAndQueryLogic`, which fetches and displays an index page’s items when its query changes, ignoring outdated responses, and focusing and announcing the first item a “load more” response adds
+- Add `@asl-19/js-dom-utils` dependency
 - `useHrefIsActive`: Accept an array of `href`s, returning true if any of them is active (e.g. to show a link as active on related pages)
 - `useHrefIsActive`: Deprecate `webPublicUrl`, which is now optional and ignored, since `href`s are only compared by pathname and query string
 - Widen `next` peer dependency range to `^15.4.2 || ^16.0.0`, and `react` and `react-dom` to `^19.0.0`

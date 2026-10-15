@@ -12,6 +12,35 @@ npm install @asl-19/next-utils
 
 See [`docs/README.md`](./docs/README.md) for API documentation.
 
+## Testing code that uses these hooks
+
+The hooks import `next/router.js`. In a project’s Vitest tests, `vi.mock("next/router")` (or `"next/router.js"`) doesn’t apply to them, since Vitest loads `@asl-19/next-utils` from `node_modules` without transforming it. Either:
+
+- Provide the router through Next’s `RouterContext`, as the page would get it at runtime:
+
+  ```tsx
+  import { RouterContext } from "next/dist/shared/lib/router-context.shared-runtime";
+
+  render(
+    <RouterContext.Provider value={mockRouter}>
+      <IndexPage />
+    </RouterContext.Provider>,
+  );
+  ```
+
+- Or have Vitest transform the package, so module mocks apply to it too:
+
+  ```ts
+  // vitest.config.ts
+  export default defineConfig({
+    test: {
+      server: { deps: { inline: ["@asl-19/next-utils"] } },
+    },
+  });
+  ```
+
+`useIndexPageLoadingAndQueryLogic` only reads the router’s `query` and calls `replace` (to replace the initial route with a shallow route), and `useFocusH1OnRouteChangeComplete` reads `asPath` and subscribes to `events`, so a mock router only needs those.
+
 ## Development
 
 This package uses [mise](https://mise.jdx.dev/) to manage the Node.js and [pinact](https://github.com/suzuki-shunsuke/pinact) versions (see [`mise.toml`](./mise.toml)). With mise [activated](https://mise.jdx.dev/getting-started.html#activate-mise) in your shell:
