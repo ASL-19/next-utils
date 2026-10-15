@@ -1,5 +1,24 @@
 # @asl-19/next-utils changelog
 
+## Unreleased
+
+- `useHrefIsActive`: Accept an array of `href`s, returning true if any of them is active (e.g. to show a link as active on related pages)
+- `useHrefIsActive`: Deprecate `webPublicUrl`, which is now optional and ignored, since `href`s are only compared by pathname and query string
+- Widen `next` peer dependency range to `^15.4.2 || ^16.0.0`, and `react` and `react-dom` to `^19.0.0`
+- Add parameter descriptions to `useHrefIsActive` type declarations
+
+Development tooling:
+
+- Replace API Extractor and API Documenter with TypeDoc
+- Add Vitest tests (happy-dom, React Testing Library) for each function and hook, replacing the unused Jest setup
+- Remove package-changed and npm-check-updates, and add `outdated` scripts
+- Add ESLint, publint, Are the Types Wrong? (`attw`) and a docs freshness check to `lint-test`
+- Manage Node.js 24 and pinact with mise
+- Add npm supply-chain gates (`.npmrc`, `devEngines`, `allowScripts`)
+- Update TypeScript to 6.0, ESLint to 10, @asl-19/eslint-config to 1.0 and Prettier to 3.9, and compile with `module: "nodenext"`
+- Pin GitHub Actions to commit SHAs, limit the workflow token to read-only, and run CI on pull requests
+- Add agent instructions (`AGENTS.md`) and Claude Code permission settings
+
 ## [1.0.0](https://github.com/ASL-19/next-utils/pulls?q=is%3Apr+is%3Aclosed+milestone%3A1.0.0) [2025-08-15]
 
 - Migrate to ESM [[#14](https://github.com/ASL-19/next-utils/pull/14)]

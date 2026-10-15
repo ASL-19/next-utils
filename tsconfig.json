@@ -3,17 +3,20 @@
     "allowJs": true,
     "checkJs": true,
     "declaration": true,
-    "incremental": true,
-    "module": "preserve", // "esnext" breaks next/router.js imports (unclear why)
+    "module": "nodenext",
     "outDir": "dist",
-    "strict": true,
+    "rootDir": ".",
     "skipLibCheck": true,
-    "target": "es2021"
+    "strict": true,
+    "target": "es2022",
+    "types": [
+      "node"
+    ]
   },
   "include": [
     "*.js",
+    "*.mjs",
     "*.ts",
-    ".eslintrc.js",
     "src/**/*.ts*"
   ]
 }
